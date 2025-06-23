@@ -1,0 +1,21 @@
+server:
+  port: "8080"
+
+# Get a Personal Access Token (PAT) from GitHub with "repo" read access.
+# https://github.com/settings/tokens
+github:
+  apiKey: "YOUR_GITHUB_PERSONAL_ACCESS_TOKEN" # IMPORTANT: Use a secret manager in production!
+  # A map of short names to full "owner/repo" strings.
+  repositories:
+    chi: "go-chi/chi"
+    viper: "spf13/viper"
+    # Add more repos here
+
+# You can get a Stack Exchange API key here to increase your request limit:
+# https://stackapps.com/apps/oauth/register
+stackexchange:
+  apiKey: "YOUR_STACKEXCHANGE_API_KEY" # Optional, but recommended
+
+openapi:
+  # Can be a local file path or a remote URL
+  schemaPath: "https://petstore3.swagger.io/api/v3/openapi.json"
